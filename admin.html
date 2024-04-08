@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Admin</title>
+
+<style>
+
+
+
+.column {
+
+ float: left;
+ flex-direction: row;
+
+ width: 70%;
+
+ padding: 10px;
+
+}
+
+.row:after {
+
+ content: "";
+
+ display: table;
+
+ clear: both;
+
+}
+
+.button {
+
+ background-color: #4CAF50;
+
+ border: none;
+
+ color: white;
+
+ padding: 15px 32px;
+
+ text-align: center;
+
+ text-decoration: none;
+
+ display: inline-block;
+
+ font-size: 16px;
+
+ margin: 4px 2px;
+
+ cursor: pointer;
+
+}
+
+.button1 {
+
+ background-color: white;
+
+ color: black;
+
+ border: 2px solid #4CAF50;
+
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.button2 {
+
+ background-color: white;
+
+ color: black;
+
+ border: 2px solid #008CBA;
+
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.main{
+  margin-top: 8%;
+  margin-left: 20%;
+}
+
+#test{
+  margin-left: 35%;
+}
+#adminbutton{
+  padding-left: 25%
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <h1 id="test">Available Operations</h1>
+<div class="main">
+<div class="row">
+
+ <div class="column"  >
+
+  <a href="/admin/product_display"><button class="button button1">Display Products</button></a>
+
+  <a href="/admin/product_add"><button class="button button1">Add Products</button></a>
+
+  <a href="/admin/product_delete"><button class="button button1">Delete Products</button></a>
+
+  <a href="/admin/product_update"><button class="button button1">Update Products</button></a>
+
+ </div>
+
+ <div class="column" >
+
+   <a href="/admin/section_display"><button class="button button2">Display Sections</button></a>
+
+   <a href="/admin/section_add"><button class="button button2">Add Sections</button></a>
+
+   <a href="/admin/section_delete"><button class="button button2">Delete Sections</button></a>
+
+   <a href="/admin/section_update"><button class="button button2">Update Sections</button></a>
+
+ </div>
+ <div id="adminbutton" class="column">
+  <a href="/admin/create_admin"><button class="button button2">Create Admins</button></a>
+ </div>
+
+</div>
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

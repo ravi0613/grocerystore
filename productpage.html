@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+
+
+
+    <div class="pdis">
+    <div id="card_display" class="card1">
+        <div class="img">
+          <img src="{{product1.img_link}}"height="250px" width="200px"/>
+        </div>
+        <div class="pname">{{product1.product_name}}</div>
+        <div class="pname">Manufacture date:{{product1.product_mdate}}</div>
+        <div class="pprice">Price: {{product1.product_price}}</div>
+    </div>
+    </div>
+<br>
+
+    
+
+    <form action='' method = "POST">
+        <div class="center">
+            <div class="quantity-dropdown">
+            <label for="quantity">Quantity:</label>
+            <input type="integer" placeholder="Enter Quantity" name="quantity">
+              <!-- Add more options if needed -->
+            </div>
+            </div>
+            <br>
+            <div class="center1">
+                <p><input type = "submit" value = "Add To Cart" /></p>
+            </div>
+        
+        
+      </form>
+  
+
+
+
+
+
+
+
+
+
+    
+    {% endblock %}
+    

@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+
+    <div class="cards"> 
+
+    {% for product1 in products %}
+
+
+    
+    <div class="pdis">
+    <div id="card_display" class="card">
+        <div class="img">
+          <a href="/product/{{product1.product_id}}"><img src="{{product1.img_link}}"height="250px" width="200px"/></a>
+        </div>
+        <div class="pname">{{product1.product_name}}</div>
+        <div class="pname">{{product1.product_mdate}}</div>
+        <div class="sname">Price: {{product1.product_price}}</div>
+    </div>
+</div>
+{% endfor %}
+</div> 
+
+
+
+
+
+
+
+
+
+    
+    {% endblock %}
+    

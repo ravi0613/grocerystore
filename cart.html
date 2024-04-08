@@ -1,0 +1,81 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+
+
+
+
+
+    <body>
+
+  
+        <h1 class="ref2">Products</h1>
+      
+      
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Product Quantity</th>
+              <th scope="col">Product Price</th>
+              <th scope="col">Total Price</th>
+              
+      
+              
+      
+            </tr>
+          </thead>
+          <tbody>
+              
+        {% for product in products %}
+            <tr>
+              <th scope="row"></th>
+              <td>{{ product.t_name}}</td>
+              <td>{{product.t_quantity }}</td>
+              <td>{{product.t_price }}</td>
+              <td>{{product.t_total }}</td>
+
+
+              {% endfor %}
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td colspan="3"><strong>Total</strong></td>
+              <td>{{ t }}</td>
+          </tr>
+          </tbody>
+        </table>
+      
+
+
+
+      <div id="admin2">
+        <a  ><button >continue to payment</button></a>
+        </div>
+      
+      
+      
+      
+      </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    {% endblock %}
+    
